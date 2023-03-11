@@ -1,10 +1,12 @@
-
-import AppRouter from './router/AppRouter';
+import AuthContext from "./context/AuthContextProvider";
+import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <AppRouter/>
+      <AuthContext>
+        <AppRouter />
+      </AuthContext>
     </div>
   );
 }
