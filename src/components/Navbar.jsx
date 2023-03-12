@@ -16,18 +16,18 @@ const Navbar = () => {
           </Link>
           <div className="d-flex text-white align-items-center">
             <h5 className="mb-0 text-capitalize"> {myUser?.displayName} </h5>
-
-            <Link to="/login" className="ms-2 btn btn-outline-light">
-              Login
-            </Link>
-
-            <button
-              onClick={() => logOut()}
-              className="ms-2 btn btn-outline-light"
-            >
-              Logout
-            </button>
-
+            {!myUser ? (
+              <Link to="/login" className="ms-2 btn btn-outline-light">
+                Login
+              </Link>
+            ) : (
+              <button
+                onClick={() => logOut()}
+                className="ms-2 btn btn-outline-light"
+              >
+                Logout
+              </button>
+            )}
             <Link to="/register" className="ms-2 btn btn-outline-light">
               Register
             </Link>
