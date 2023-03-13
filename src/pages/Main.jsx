@@ -52,8 +52,8 @@ console.log(movies)
         />
         <button type="submit">Search</button>
       </form>
-      <div className="d-flex flex-wrap justify-content-center">card</div>
-      <div className="flex justify-center flex-wrap">
+      <div className="d-flex flex-wrap  text-danger justify-content-center">Film Series</div>
+      <div className="d-flex justify-center flex-wrap ">
         {loading ? (
           <div className="flex justify-center items-center">
             <div

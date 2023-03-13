@@ -8,7 +8,7 @@ const defaultImage =
     
     return (
   
-      <div className="movie" >
+      <div className="movie  " >
         <img src={poster_path ? IMG_API + poster_path : defaultImage} alt="" />
   
         <div className=" d-flex align-items-baseline justify-content-between p-1 text-white" >

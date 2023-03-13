@@ -10,19 +10,22 @@ body {
 }
 
 .root {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+ 
 }
 
 .movie {
   background-color: #3f51b5;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin: 1rem;
   width: 300px;
   position: relative;
   cursor: pointer;
+  outline: 10px solid gray;
+  
 }
 
 .movie img {
@@ -73,7 +76,7 @@ body {
   background-color: #bdbdbd;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  
 }
 
 .search-input {
