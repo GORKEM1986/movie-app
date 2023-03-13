@@ -9,7 +9,7 @@ const Main = () => {
   const [movies, setMovies] = useState([]);
   const [seacrhTherm, setSeacrhTherm] = useState("");
   const [loading, setLoading] = useState(false);
-  const [page, setPage] = useState(1);
+  // const [page, setPage] = useState(1);
   const { MyUser } = useContext(AuthContext);
 
   const FEATURED_API = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&include_adult=false`;
